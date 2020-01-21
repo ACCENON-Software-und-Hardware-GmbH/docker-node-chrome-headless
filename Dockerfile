@@ -1,7 +1,7 @@
 FROM ubuntu:latest
 
-MAINTAINER Neridonk
-LABEL vendor="Neridonk"
+MAINTAINER ACCENON®
+LABEL vendor="ACCENON®"
 LABEL tools="chrome node npm yarn"
 
 # Install deps
@@ -24,7 +24,7 @@ RUN curl -sSL https://dl.google.com/linux/linux_signing_key.pub | apt-key add - 
 
 # Install Chrome 76
 # https://www.ubuntuupdates.org/ppa/google_chrome?dist=stable
-ENV CHROME_VERSION=76.0.3809.100-1
+ENV CHROME_VERSION=79.0.3945.130-1
 
 RUN apt-get update && apt-get install -y \
     google-chrome-stable=$CHROME_VERSION \
